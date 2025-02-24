@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .nav-bar a {
+            background-color: cyan;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: rgb(19, 61, 75);
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .back-btn {
+            background-color: rgba(0, 184, 212, 0.5);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: rgba(0, 184, 212, 0.7);
+            animation: hoverAnimation 0.3s ease-in-out;
+        }
+
+        .team-member {
+            background-color: rgb(19, 61, 75);
+            padding: 15px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            margin: 20px;
+        }
+
+        .team-member:hover {
+            background-color: rgb(7, 85, 110);
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        @keyframes hoverAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="product-home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="services.html">Services</a>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-btn">Back to Home</a>
+        <h1 class="text-center">Meet Our Amazing Team</h1>
+        
+        <div class="team-member">
+            <img src="team1.jpg" alt="Team Member">
+            <h3>John Doe</h3>
+            <p>Our Visionary Leader</p>
+        </div>
+        
+        <div class="team-member">
+            <img src="team2.jpg" alt="Team Member">
+            <h3>Jane Smith</h3>
+            <p>Creative Director</p>
+        </div>
+        
+        <div class="team-member">
+            <img src="team3.jpg" alt="Team Member">
+            <h3>Mary Johnson</h3>
+            <p>Lead Designer</p>
+        </div>
+
+        <div class="team-member">
+            <img src="team4.jpg" alt="Team Member">
+            <h3>James Brown</h3>
+            <p>Head of Development</p>
+        </div>
+    </div>
+
+</body>
+</html>

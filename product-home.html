@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST SELLERS</title>
+    <style>
+      body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #1f1f1f;
+    transition: background-color 0.3s ease-in-out;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar .logo span {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar a {
+    background-color: #003F5C;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 10px darkblue;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgba(0, 184, 212, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {    
+    box-shadow: 0px 5px 12px rgba(0, 184, 212, 0.5);
+}
+
+.footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.testimonial {
+    font-style: italic;
+    color: #ccc;
+}
+
+.back-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 184, 212, 0.5);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn:hover {
+    box-shadow: 0px 5px 12px rgba(0, 184, 212, 0.5);
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/Best%20seller.png?alt=media&token=557e6696-1f9a-4451-8cfd-bd994145a9ad" alt="BestFashion Logo" class="logo-img">
+            BEST<span>FASHION</span>
+        </div> 
+        <div>
+            <a href="index.html">Home</a>  
+            <a href="about.html">About</a>
+            <a href="product.html">Product</a>
+        </div>
+    </div>
+    
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Best Selling Headphones, Earbuds, and Earphones</h1>
+        <div class="product">
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage9.jpg?alt=media&token=3cf45872-9ae8-4f21-a8c8-948ec676a5c0" alt="Headphones">
+                <h3>Premium Headphones</h3>
+                <p>High-quality sound with noise cancellation.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage3.jpg?alt=media&token=0b067db4-13bb-4982-b69f-8cb035ba36b9" alt="Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage2.jpg?alt=media&token=5a0c9281-f584-4b93-afcc-b6c823f35e50" alt="Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage8.jpg?alt=media&token=360c086b-c789-4543-9178-27cf5ebdc958" alt="Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage1.jpg?alt=media&token=fa8e7ff2-d648-4c5b-a04a-2145c7232286" alt="Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage6.jpg?alt=media&token=2adcaf09-4ca6-4158-85f5-7e0739be6a5a" alt="Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage5.jpg?alt=media&token=58692a5f-c1a9-4b7b-b8a4-e92e807f949f" alt="Earbuds">
+                <h3>Wired Earphones</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage7.jpg?alt=media&token=5574e86a-7938-43e8-afe5-46961aa5555e" alt="Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage13.jpg?alt=media&token=7b2b1890-442e-4f2a-9d2b-4f0563452e39" alt="Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage4.jpg?alt=media&token=e2515049-34c0-4254-b39a-391bdfef89c8" alt="Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>            
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage6.jpg?alt=media&token=2adcaf09-4ca6-4158-85f5-7e0739be6a5a" alt="Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>Comfortable fit with long battery life.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="card">
+                <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-92a1d.appspot.com/o/landing-page%2Fimage10.jpg?alt=media&token=8e78761a-844a-4607-9e66-69e6ab2a19cc" alt="Earphones">
+                <h3>In-Ear Earphones</h3>
+                <p>Crisp audio with deep bass.</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>What Our Customers Say</h2>
+        <p class="testimonial">"These headphones are amazing! The noise cancellation is top-notch!" - John Doe</p>
+        <p class="testimonial">"The earbuds are super comfortable and the sound quality is fantastic!" - Jane Smith</p>
+        <p class="testimonial">"Best earphones I’ve ever used. Highly recommended!" - Mark Wilson</p>
+    </div>
+
+    <a href="index.html" class="back-btn">⬅ Back</a>
+
+</body>
+</html>

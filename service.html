@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .service-box {
+            background-color: rgb(7, 45, 57);
+            padding: 15px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .service-box:hover {
+            background-color: rgba(0, 184, 212, 0.5);
+        }
+        
+        .nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.nav-bar a, .back-btn {
+    background-color: #003F5C;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: block;
+}
+
+.nav-bar a:hover, .back-btn:hover {
+    box-shadow: 0px 5px 12px rgba(0, 184, 212, 0.5);
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">       
+        <a href="index.html" class="back-btn">Back</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+    </div>
+
+    <div class="container">
+        <h1>Our Services</h1>
+        
+        <div class="service-box">
+            <h2>Product Consultation</h2>
+            <p>Get expert advice on choosing the right products.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>Customization</h2>
+            <p>Personalize products to meet your needs.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>Delivery Service</h2>
+            <p>Fast and reliable shipping worldwide.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>Customer Support</h2>
+            <p>24/7 assistance for any product-related queries.</p>
+        </div>
+    </div>
+
+</body>
+</html>
